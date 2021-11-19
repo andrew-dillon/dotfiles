@@ -63,5 +63,5 @@ alias mcp='mvn clean package -D maven.test.skip=true'
 function parseGitBranch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="\\[\e[48;5;253m\e[1;32m\] 🌐 \w\$(parseGitBranch) > \[\e[m\e[1;32m\] \[\e[m\]"
+export PS1="\\[\e[48;5;253m\e[1;32m\]🌐 \w\$(parseGitBranch) > \[\e[m\e[1;32m\] \[\e[m\]"
 
