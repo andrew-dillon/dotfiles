@@ -84,6 +84,7 @@ alias gjf='google-java-format --replace $(git ls-files | grep \.java$)'
 
 # Misc aliases
 alias dc='docker compose'
+alias brt='bin/rails test'
 
 alias te='open -a "TextEdit" '
 alias chrome='open -a "Google Chrome" '
