@@ -107,3 +107,7 @@ function parseGitBranch {
 }
 export PS1="\\[\e[48;5;253m\e[1;32m\]🌐 \w\$(parseGitBranch) > \[\e[m\e[1;32m\] \[\e[m\]"
 
+# https://stackoverflow.com/a/37956249
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
